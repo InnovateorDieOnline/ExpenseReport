@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <title>Expense Tracker</title>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" type="text.css" href="css/main.css">
+	<script type="text/javascript" src="js/localStorage.js" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	
+	$("#submit").click(function(){
+		localStorage.setItem('date', document.getElementById('date').value);
+		localStorage.setItem('amount', document.getElementById('amount').value);		
+		localStorage.setItem('venue', document.getElementById('venue').value);
+		localStorage.setItem('reason', document.getElementById('reason').value);
+	});
+		});	
+	
+	</script>
+	
+	<script>
+	function takePicture()
+	{
+	 blackberry.media.camera.takePicture(); 
+	}
+	</script>
+  </head>
+   <body>
+	<div id ="mainContent">
+	<h1>Expense Tracker</h1>
+	<div id="formHolder">
+		<form id="contact" method="post" action=""> 
+			<table>
+				<tr>
+				<td><label for="Date">Date</label></td>
+				<td><input type="text" name="date" id="date" class ="textBox" ></td>
+				</tr>
+				
+				<tr>
+				<td><label for="Amount">Amount:</label></td>
+				<td><input type="text" name="amount" id="amount" class ="textBox" ></td>
+				</tr>
+				
+				<tr>
+				<td><label for="Venue">Venue</label></td>
+				<td><input type="text" name="venue" id="venue" class ="textBox" ></td>
+				</tr>
+		
+				<tr>
+				<td><label for="Reason">Reason For Purchase</label></td>
+				<td><textarea name="" id="reason" id="reason" class ="textBox" ></textarea></td>
+				</tr>
+				
+				<tr>
+				<td></td>
+				<td><button type="button" id="submit" onclick="takePicture()">Submit</button</td>
+				</tr>		
+			</table>
+		</form>
+	</div> 
+	<div id="bottomBar">
+		<a href="index.html"><button id="backButton" type="button">Back</button></a>
+	</div>
+	</div>
+ 
+
+  </body>
+
+</html>

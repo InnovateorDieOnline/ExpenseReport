@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.0" id="HelloWorldApp">  
+    <name>Expense Report</name>
+    <author>Daniel Lucas</author>
+    <description>Collect, and organize busines expenses in an orderly fashion</description>
+    <icon src="images/icon.png"/>
+    <content src="index.html"/>
+    <rim:permissions>  
+       <rim:permit>use_camera</rim:permit>
+    </rim:permissions>    
+
+</widget>

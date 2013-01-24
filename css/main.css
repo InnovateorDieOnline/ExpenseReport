@@ -1,0 +1,63 @@
+@CHARSET "ISO-8859-1";
+
+
+/****************Sytles for index.html********************/
+
+{
+margin: 0px; 
+padding: 0px; 
+background-color: #000000; 
+}
+
+
+#mainContent
+{
+padding-top: 20px; 
+text-align: center; 
+width: 1024px; 
+height: 600px;
+background-color: #32D420; 
+}
+
+#buttonHolder
+{
+	margin: 150px auto 0px auto; 
+	height: 150px; 
+	width: 355px; 
+	background-color: #B07FB3; 
+}
+
+#newReceipt
+{
+width: 175px; 
+height:100px; 
+}
+
+#accessLog
+{
+width: 175px; 
+height:100px; 
+}
+
+/****************Sytles for recieptForm.html********************/
+
+#formHolder
+{
+	margin: 150px auto 0px auto; 
+	height: 200px; 
+	width: 355px; 
+	background-color: #B07FB3; 
+	text-align: right; 
+}
+
+.textBox
+{
+	width: 200px; 
+}
+
+#bottomBar
+{
+	margin-top: 100px; 
+	margin-left: 20px;
+	width:50px; 
+}
